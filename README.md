@@ -80,56 +80,6 @@ Banks run large-scale marketing campaigns for term deposits, but only a small pe
 * Campaign **duration** has a strong influence on customer subscription behavior
 * Customers with **successful previous campaign outcomes** show higher subscription probability
 * Targeted campaigns based on data insights can significantly reduce marketing costs
-
----
-
-## 📁 Repository Structure
-
-```
-bank-term-deposit-prediction/
-│
-├── data/
-│   └── data.csv
-│
-├── notebook/
-│   └── Advance_Bank_Term_Deposit.ipynb
-│
-├── README.md
-│
-└── requirements.txt
-```
-
----
-
-## 🚀 How to Run the Project
-
-1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/bank-term-deposit-prediction.git
-```
-
-2. Navigate to the project directory
-
-```bash
-cd bank-term-deposit-prediction
-```
-
-3. Install required dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-4. Launch Jupyter Notebook
-
-```bash
-jupyter notebook
-```
-
-5. Open and run:
-   `Advance_Bank_Term_Deposit.ipynb`
-
 ---
 
 ## 🎯 Learning Outcomes
