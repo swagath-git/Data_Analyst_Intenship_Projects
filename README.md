@@ -1,110 +1,129 @@
-# Bank Term Deposit Subscription Prediction
 
-# Project Overview
+# 🧠 Machine Learning Projects — Skillfied Mentor Internship
 
-This project was completed as part of my Data Analyst Internship at SkillFied Mentor. The task focuses on analyzing bank marketing data to understand customer behavior and to build a predictive, decision-support solution that estimates whether a customer is likely to subscribe to a bank term deposit.
-
-The project emphasizes business-oriented data analysis, combining exploratory data analysis with basic predictive modeling to support better marketing decisions.
+> Projects completed during my Data Science & Machine Learning internship at **Skillfied Mentor**.  
+> This repository contains end-to-end ML pipelines covering EDA, preprocessing, modeling, and evaluation.
 
 ---
 
-# Business Problem
 
-Banks run large-scale marketing campaigns for term deposits, but only a small percentage of customers respond positively. Inefficient targeting leads to higher costs and lower conversion rates.
+# Project 1 — Bank Marketing Data Analysis
 
-# Objective
+## Overview
+Analysis of a bank's telemarketing campaign dataset to understand customer behavior and predict whether a client will subscribe to a **term deposit**.
 
-1. Identify patterns and factors influencing customer subscription
-2. Support data-driven decision-making for marketing campaigns
-3. Improve campaign efficiency and customer targeting
+### 📊 Dataset
+| Property | Value |
+|----------|-------|
+| Rows | 41,188 |
+| Features | 21 |
+| Target Column | `y` (yes / no) |
+| Class Distribution | No: 36,548 (88.7%) · Yes: 4,640 (11.3%) |
 
----
+**Key Features:** `age`, `job`, `marital`, `education`, `contact`, `duration`, `campaign`, `poutcome`, `emp.var.rate`, `euribor3m`
 
-# Dataset Description
+### 📓 Notebooks
 
-1. **File:** `data.csv`
-2. **Data Type:** Structured tabular data
-3. **Target Variable:** `y`
+#### `Bank_Marketing_Inspection_test.ipynb` — Data Inspection
+- Dataset loading and structure review
+- Missing value check
+- Summary statistics
+- Target variable distribution plot
+- Correlation heatmap for numerical features
 
-  1. `yes` → Customer subscribed to a term deposit
-  2. `no` → Customer did not subscribe
+#### `Advance_Bank_Term_Deposit.ipynb` — Advanced Analysis & Modeling
+- **Customer Demographics Analysis** — Age distribution, job category breakdown
+- **Campaign Effectiveness** — Contact method vs subscription, number of contacts analysis
+- **Balance & Duration Trends** — Average call duration by subscription outcome
+- **Correlation Heatmap** — Relationships between numerical variables
+- **Predictive Modeling** — Logistic Regression with one-hot encoding
+- **Feature Importance** — Top predictors for term deposit subscription
 
-# Feature Categories
+##  Tech Stack
+```python
+pandas · matplotlib · seaborn · scikit-learn (LogisticRegression, train_test_split)
+```
 
-1. **Demographic:** age, job, marital status, education
-2. **Financial:** account balance, housing loan, personal loan
-3. **Campaign-related:** contact type, duration, number of contacts
-4. **Previous Campaign Outcome:** poutcome
-
----
-
-# Tools & Technologies
-
-1. Python
-2. Jupyter Notebook
-3. Pandas, NumPy
-4. Matplotlib, Seaborn
-5. Scikit-learn
-
----
-
-# Project Workflow
-
-1. Data Understanding and Inspection
-2. Data Cleaning and Preprocessing
-3. Exploratory Data Analysis (EDA)
-4. Feature Engineering and Encoding
-5. Predictive Analysis using Classification Models
-6. Model Evaluation
-7. Business Insights and Conclusion
+### 📈 Key Findings
+- Cellular contact method has higher subscription rates than telephone
+- Longer call duration strongly correlates with successful subscriptions
+- Certain job categories (management, retired) show higher subscription likelihood
+- Logistic Regression identifies `duration`, `poutcome_success`, and `euribor3m` as top predictors
 
 ---
 
-# Analytical & Predictive Techniques
+# Project 2 — Colorectal Cancer Risk & Survival Prediction
 
-1. Exploratory Data Analysis (EDA)
-2. Data Cleaning and Feature Engineering
-3. Logistic Regression (baseline predictive analysis)
-4. Decision Tree and Random Forest (comparative analysis)
+## Overview
+A classification project to predict the **survival status** of colorectal cancer patients based on demographics, medical history, lifestyle factors, and treatment details.
 
-# Evaluation Metrics
+### 📊 Dataset
+| Property | Value |
+|----------|-------|
+| Rows | 89,945 |
+| Features | 30 |
+| Target Column | `Survival_Status` (Survived / Deceased) |
+| Class Distribution | Survived: 67,341 (74.9%) · Deceased: 22,604 (25.1%) |
 
-1. Accuracy Score
-2. Confusion Matrix
-3. Classification Report
+**Key Features:** `Age`, `Gender`, `Stage_at_Diagnosis`, `Tumor_Aggressiveness`, `Chemotherapy_Received`, `Surgery_Received`, `Smoking_Status`, `BMI`, `Family_History`, `Screening_Regularity`
+
+### 📓 Notebook — `colorectal_cancer_prediction_test.ipynb`
+
+#### Step-by-step Pipeline:
+1. **Data Loading & Exploration** — Shape, dtypes, first look
+2. **EDA** — Survival status distribution, recurrence patterns, correlation heatmap
+3. **Data Preprocessing**
+   - Dropped irrelevant columns: `Patient_ID`, `Recurrence`, `Time_to_Recurrence`
+   - Label Encoding for all categorical variables
+   - StandardScaler for feature normalization
+4. **Train-Test Split** — 80% train / 20% test (`random_state=42`)
+5. **Model Training** — Logistic Regression
+6. **Evaluation**
+   - Accuracy Score
+   - Classification Report (Precision, Recall, F1)
+   - Confusion Matrix heatmap
+
+### Tech Stack
+```python
+pandas · numpy · seaborn · matplotlib
+scikit-learn (LogisticRegression, LabelEncoder, StandardScaler, train_test_split, classification_report, confusion_matrix)
+```
+
+### 📈 Key Findings
+- Stage at diagnosis and tumor aggressiveness are critical survival predictors
+- Patients who received surgery and chemotherapy show higher survival rates
+- Screening regularity and colonoscopy access positively impact early detection and survival
+- Logistic Regression provides a solid baseline for clinical prediction
+---
+
+## 🧰 Libraries Used
+
+| Library | Purpose |
+|---------|---------|
+| `pandas` | Data loading and manipulation |
+| `numpy` | Numerical operations |
+| `matplotlib` | Data visualization |
+| `seaborn` | Statistical plots and heatmaps |
+| `scikit-learn` | ML models, preprocessing, evaluation |
+| `jupyter` | Interactive notebook environment |
 
 ---
 
-# Key Business Insights
+## Internship Details
 
-1. Campaign duration has a strong influence on customer subscription behavior
-3. Customers with successful previous campaign outcomes show higher subscription probability
-3. Targeted campaigns based on data insights can significantly reduce marketing costs
----
-
-# Learning Outcomes
-
-1. Hands-on experience with real-world banking data
-2. Applying EDA to extract meaningful business insights
-3. Using predictive analysis to support decision-making
-4. Translating technical results into business recommendations
+| | |
+|--|--|
+| **Company** | Skillfied Mentor |
+| **Domain** | Data Science & Machine Learning |
+| **Projects** | Bank Marketing Analysis · Colorectal Cancer Prediction |
+| **Skills Gained** | EDA · Feature Engineering · Classification · Model Evaluation |
 
 ---
 
-# Future Enhancements
+## 📄 License
 
-1. Creation of interactive dashboards (Power BI / Streamlit)
-2. Feature importance analysis for marketing strategy
-3. SQL-based customer segmentation analysis
-4. Deployment of insights for business users
-
----
-
-# Internship Details
-
-1. **Internship Platform:** SkillFied Mentor
-2. **Role:** Data Analyst Intern
-3. **Task Type:** Business data analysis and predictive insight generation
+This repository is for educational and portfolio purposes only.  
+Datasets are used solely for learning and non-commercial analysis.
 
 ---
 
