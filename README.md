@@ -20,18 +20,18 @@ Analysis of a bank's telemarketing campaign dataset to understand customer behav
 | Target Column | `y` (yes / no) |
 | Class Distribution | No: 36,548 (88.7%) · Yes: 4,640 (11.3%) |
 
-**Key Features:** `age`, `job`, `marital`, `education`, `contact`, `duration`, `campaign`, `poutcome`, `emp.var.rate`, `euribor3m`
+**Key Features:** age, job, marital, education, contact, duration, campaign, poutcome, emp.var.rate, euribor3m
 
 ### 📓 Notebooks
 
-# `Bank_Marketing_Inspection_test.ipynb` — Data Inspection
+## Bank_Marketing_Inspection_test.ipynb — Data Inspection
 - Dataset loading and structure review
 - Missing value check
 - Summary statistics
 - Target variable distribution plot
 - Correlation heatmap for numerical features
 
-# `Advance_Bank_Term_Deposit.ipynb` — Advanced Analysis & Modeling
+## Advance_Bank_Term_Deposit.ipynb — Advanced Analysis & Modeling
 - **Customer Demographics Analysis** — Age distribution, job category breakdown
 - **Campaign Effectiveness** — Contact method vs subscription, number of contacts analysis
 - **Balance & Duration Trends** — Average call duration by subscription outcome
@@ -65,9 +65,9 @@ A classification project to predict the **survival status** of colorectal cancer
 | Target Column | `Survival_Status` (Survived / Deceased) |
 | Class Distribution | Survived: 67,341 (74.9%) · Deceased: 22,604 (25.1%) |
 
-**Key Features:** `Age`, `Gender`, `Stage_at_Diagnosis`, `Tumor_Aggressiveness`, `Chemotherapy_Received`, `Surgery_Received`, `Smoking_Status`, `BMI`, `Family_History`, `Screening_Regularity`
+**Key Features:** Age, Gender, Stage_at_Diagnosis, Tumor_Aggressiveness, Chemotherapy_Received, Surgery_Received, Smoking_Status, BMI, Family_History, Screening_Regularity
 
-### 📓 Notebook — `colorectal_cancer_prediction_test.ipynb`
+### 📓 Notebook — colorectal_cancer_prediction_test.ipynb
 
 #### Step-by-step Pipeline:
 1. **Data Loading & Exploration** — Shape, dtypes, first look
