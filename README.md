@@ -24,14 +24,14 @@ Analysis of a bank's telemarketing campaign dataset to understand customer behav
 
 ### 📓 Notebooks
 
-#### `Bank_Marketing_Inspection_test.ipynb` — Data Inspection
+# `Bank_Marketing_Inspection_test.ipynb` — Data Inspection
 - Dataset loading and structure review
 - Missing value check
 - Summary statistics
 - Target variable distribution plot
 - Correlation heatmap for numerical features
 
-#### `Advance_Bank_Term_Deposit.ipynb` — Advanced Analysis & Modeling
+# `Advance_Bank_Term_Deposit.ipynb` — Advanced Analysis & Modeling
 - **Customer Demographics Analysis** — Age distribution, job category breakdown
 - **Campaign Effectiveness** — Contact method vs subscription, number of contacts analysis
 - **Balance & Duration Trends** — Average call duration by subscription outcome
