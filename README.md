@@ -22,7 +22,6 @@ Analysis of a bank's telemarketing campaign dataset to understand customer behav
 
 **Key Features:** age, job, marital, education, contact, duration, campaign, poutcome, emp.var.rate, euribor3m
 
-### 📓 Notebooks
 
 ## Bank_Marketing_Inspection_test.ipynb — Data Inspection
 - Dataset loading and structure review
@@ -40,9 +39,9 @@ Analysis of a bank's telemarketing campaign dataset to understand customer behav
 - **Feature Importance** — Top predictors for term deposit subscription
 
 ##  Tech Stack
-```python
+python
 pandas · matplotlib · seaborn · scikit-learn (LogisticRegression, train_test_split)
-```
+
 
 ### 📈 Key Findings
 - Cellular contact method has higher subscription rates than telephone
@@ -67,7 +66,7 @@ A classification project to predict the **survival status** of colorectal cancer
 
 **Key Features:** Age, Gender, Stage_at_Diagnosis, Tumor_Aggressiveness, Chemotherapy_Received, Surgery_Received, Smoking_Status, BMI, Family_History, Screening_Regularity
 
-### 📓 Notebook — colorectal_cancer_prediction_test.ipynb
+## colorectal_cancer_prediction_test.ipynb
 
 #### Step-by-step Pipeline:
 1. **Data Loading & Exploration** — Shape, dtypes, first look
@@ -84,10 +83,10 @@ A classification project to predict the **survival status** of colorectal cancer
    - Confusion Matrix heatmap
 
 ### Tech Stack
-```python
+python
 pandas · numpy · seaborn · matplotlib
 scikit-learn (LogisticRegression, LabelEncoder, StandardScaler, train_test_split, classification_report, confusion_matrix)
-```
+
 
 ### 📈 Key Findings
 - Stage at diagnosis and tumor aggressiveness are critical survival predictors
@@ -100,12 +99,12 @@ scikit-learn (LogisticRegression, LabelEncoder, StandardScaler, train_test_split
 
 | Library | Purpose |
 |---------|---------|
-| `pandas` | Data loading and manipulation |
-| `numpy` | Numerical operations |
-| `matplotlib` | Data visualization |
-| `seaborn` | Statistical plots and heatmaps |
-| `scikit-learn` | ML models, preprocessing, evaluation |
-| `jupyter` | Interactive notebook environment |
+| pandas | Data loading and manipulation |
+| numpy | Numerical operations |
+| matplotlib | Data visualization |
+| seaborn | Statistical plots and heatmaps |
+| scikit-learn | ML models, preprocessing, evaluation |
+| jupyter | Interactive notebook environment |
 
 ---
 
